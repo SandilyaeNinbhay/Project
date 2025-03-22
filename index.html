@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Education platform for personalized learning with resources in mathematics, science, programming, and AI.">
+  <meta name="keywords" content="Smart Education, Learning, AI, Programming, Mathematics, Science, Education Platform">
+  <meta name="author" content="Smart Education">
+  <title>Smart Education - Personalized Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>SMART EDUCATION - Personalized Learning Platform</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button> <!-- Hamburger icon -->
+        <ul id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#resources">RESOURCES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="auth-buttons">
+        <button id="login-btn" class="btn-auth">Login</button>
+        <button id="signup-btn" class="btn-auth">Signup</button>
+      </div>
+      <button id="chatbot-toggle" aria-label="Open Chat with AI">Chat with AI</button>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1  >Welcome to Smart Education</h1>
+      <p>Your personalized learning platform</p>
+      <a href="#resources" class="btn">Explore Resources</a>
+    </section>
+
+    <section id="resources" class="resources">
+      <h2 class="resource-card">Resource Library</h2>
+      <div class="resource-grid">
+        <article class="resource-card">
+          <h3>Mathematics</h3>
+          <p>Learn algebra, geometry, and more.</p>
+          <a href="#" class="btn">Explore</a>
+        </article>
+        <article class="resource-card">
+          <h3>Science</h3>
+          <p>Discover physics, chemistry, and biology.</p>
+          <a href="#" class="btn">Explore</a>
+        </article>
+        <article class="resource-card">
+          <h3>Programming</h3>
+          <p>Explore C, C++, Python, Java, and more languages.</p>
+          <a href="#" class="btn">Explore</a>
+        </article>
+        <article class="resource-card">
+          <h3>Computer Applications</h3>
+          <p>Learn Artificial Intelligence, Machine Learning, and more.</p>
+          <a href="#" class="btn">Explore</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>    
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Smart Education</h3>
+        <p>Empowering students with personalized learning tools and resources to achieve their academic goals.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" target="_blank" aria-label="Facebook"><img src="fbimage.avif" alt="Facebook"></a>
+          <a href="#" target="_blank" aria-label="Twitter"><img src="twtimg.jpg" alt="Twitter"></a>
+          <a href="#" target="_blank" aria-label="Instagram"><img src="instaimg.webp" alt="Instagram"></a>
+          <a href="#" target="_blank" aria-label="LinkedIn"><img src="linkimg.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Smart Education. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div id="chatbot-container" aria-labelledby="chatbot-header" hidden>
+    <div id="chatbot-header">
+      <h3>AI Tutor</h3>
+      <button id="close-chatbot" aria-label="Close Chatbot">&times;</button>
+    </div>
+    <div id="chatbot-messages" role="region" aria-live="polite"></div>
+    <div id="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Ask me anything..." aria-label="Chatbot Input">
+      <button id="send-button" aria-label="Send Message">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
